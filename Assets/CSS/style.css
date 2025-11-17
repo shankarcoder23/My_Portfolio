@@ -1,0 +1,45 @@
+/* Fix for perfect alignment */
+.typing {
+  display: inline-block;
+  vertical-align: middle;   /* keeps same height as text */
+  
+  /* FORCE same height + baseline alignment */
+  font-size: inherit;
+  line-height: 1em;
+  height: 1em;
+
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #3c7dddd3;
+
+  animation: typing 1.5s steps(12) forwards, blink 0.7s step-end infinite;
+}
+
+/* "Shankar Das" = 12 characters */
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 12ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.nav-link.active {
+  color: #ffffff !important;  /* Bootstrap primary blue */
+  font-weight: 600;
+}
+
+
+.footer-link {
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  .footer-link:hover {
+    color: #0d6efd; /* Bootstrap primary color */
+  }
+
+
+
+
+
