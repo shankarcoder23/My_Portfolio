@@ -86,61 +86,119 @@
 
 
 <!-- ================= HERO ================= -->
-<section id="hero" class="d-flex align-items-center text-center" style="margin-top:100px;">
+<section id="hero" class="min-vh-100 d-flex align-items-center bg-dark text-white position-relative">
   <div class="container">
-    <h1 class="fw-bold mt-1 c-font" style="font-size:2.5rem;">
-  Hello, I am <span class="text-primary typing">Shankar Das</span>
+    <div class="row align-items-center gy-5">
+
+      <!-- Text Content -->
+      <div class="col-md-7 text-center text-md-start">
+        <span class="badge bg-primary mb-3 px-3 py-2">Front-End Developer</span>
+
+        <h1 class="fw-bold display-5 mt-3">
+  Hi, I'm 
+  <span class="text-gradient typing" data-text="Shankar Das"></span>
 </h1>
 
 
-    <p class="lead mb-3">A passionate Front-End Developer creating beautiful and responsive websites.</p>
-    <a href="#projects" class="btn btn-outline-primary text-white bg-primary btn-lg px-5 mb-3">View My Work</a>
-  </div>
-</section>
+        <p class="lead mt-3 text-light opacity-75">
+          I design & build modern, responsive, and user-friendly websites
+          with clean UI and smooth user experience.
+        </p>
 
-
-<!-- ================= ABOUT ================= -->
-<section id="about" class="py-2 mt-5">
-  <div class="container">
-    <div class="row align-items-center gy-4">
+        <div class="mt-4 d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+          <a href="#projects" class="btn btn-primary btn-lg px-5">
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline-light btn-lg px-5">
+            Contact Me
+          </a>
+        </div>
+      </div>
 
       <!-- Profile Image -->
       <div class="col-md-5 text-center">
-        <img src="Assets/image/port.png" 
-             class="img-fluid rounded-3 shadow-lg about-img"
-             alt="Shankar Das Profile">
-      </div>
-
-      <!-- About Text -->
-      <div class="col-md-7">
-        <h2 class="fw-bold mb-3">
-          <span class="text-primary">About</span> Me
-        </h2>
-
-      <p class="text-custom">
-
-          Hi, I'm <strong>Shankar Das</strong>, a passionate Front-End Developer who loves building
-          clean, responsive, and user-centered websites. I specialize in creating visually appealing
-          interfaces using <strong>HTML, CSS, JavaScript, Bootstrap</strong>, and modern UI trends.
-        </p>
-
-        <p class="text-custom">
-
-          I enjoy turning ideas into functional digital experiences and continuously improving my
-          skills to stay updated with new technologies. My goal is to deliver websites that
-          are fast, modern, and enjoyable for users.
-        </p>
-
-        <!-- Buttons -->
-        <div class="mt-4">
-          <a href="#" class="btn btn-primary px-4 me-2">Download CV</a>
-          <a href="#projects" class="btn btn-outline-primary px-4">View Projects</a>
+        <div class="hero-img-wrapper mx-auto">
+          <img src="Assets/image/profile/dp-2.jpg"
+               class="img-fluid rounded-circle shadow-lg"
+               alt="Shankar Das">
         </div>
-
       </div>
+
     </div>
   </div>
 </section>
+
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">
+        About <span class="text-primary">Me</span>
+      </h2>
+      <p class="text-muted">
+        A quick introduction about who I am and what I do
+      </p>
+    </div>
+
+    <div class="row align-items-center gy-4">
+
+      <!-- Image -->
+      <div class="col-md-5 text-center">
+        <div class="about-img-card p-3 bg-white shadow rounded-4">
+          <img src="Assets/image/port.png"
+               class="img-fluid rounded-4"
+               alt="Shankar Das">
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-md-7">
+        <div class="bg-white p-4 p-lg-5 shadow rounded-4">
+
+          <h4 class="fw-bold mb-3">
+            Front-End Developer & UI Designer
+          </h4>
+
+          <p class="text-muted">
+            Hi, I'm <strong>Shankar Das</strong>, a passionate Front-End Developer focused on
+            building clean, modern, and responsive websites.
+            I enjoy transforming ideas into engaging digital experiences.
+          </p>
+
+          <p class="text-muted">
+            I work with <strong>HTML, CSS, JavaScript, Bootstrap</strong> and modern UI trends
+            to create fast, visually appealing, and user-friendly interfaces.
+          </p>
+
+          <!-- Info Badges -->
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-primary">CSS</span>
+            <span class="badge bg-primary">JavaScript</span>
+            <span class="badge bg-primary">Bootstrap 5</span>
+            <span class="badge bg-primary">UI Design</span>
+          </div>
+
+          <!-- Buttons -->
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="btn btn-primary px-4">
+              Download CV
+            </a>
+            <a href="#projects" class="btn btn-outline-primary px-4">
+              View Projects
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- ================= SKILLS ================= -->
 <section id="skills" class="py-5">
