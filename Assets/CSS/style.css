@@ -1,108 +1,88 @@
+ body{
+      background:#0b141a;
+      color:#e5e7eb;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+    }
 
+    .hero h1 span{
+      color:#0d6efd;
+    }
 
+    .hero p{
+      color:#9ca3af;
+    }
 
+    .btn-main{
+      background:#0d6efd;
+      border:none;
+      padding:12px 30px;
+      border-radius:30px;
+    }
 
-.nav-link.active {
-  color: #ffffff !important;  /* Bootstrap primary blue */
-  font-weight: 600;
-}
+    .btn-outline{
+      border:1px solid #0d6efd;
+      color:#0d6efd;
+      padding:12px 30px;
+      border-radius:30px;
+    }
 
-/*About*/
-.text-custom {
-  color: #000000 !important; /* change to any color you want */
-  
-}
+    .profile-img{
+      border-radius:20px;
+      box-shadow:0 20px 50px rgba(0,0,0,0.6);
+    }
+
+    .badge-box{
+      background:#111827;
+      padding:10px 15px;
+      border-radius:12px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      position:absolute;
+      color:#0d6efd;
+      font-size:14px;
+    }
 
 .skill-card {
-  background: linear-gradient(135deg, #a3a3a85c, #cfe0ffd1); /* Purple → Blue */
-  color: rgb(4, 4, 4);
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+.skill-section {
+  background: linear-gradient(135deg,#0d1117,#0b5ed7);
 }
 
-.skill-card i {
-  color: #fff 
+.skill-card {
+  background: rgba(213, 69, 69, 0.675);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  transition: all 0.3s ease;
 }
 
-
-
-.footer-link {
-    text-decoration: none;
-    transition: 0.3s ease;
-  }
-  .footer-link:hover {
-    color: #e3eefe; /* Bootstrap primary color */
-  }
-
-
-
-/* Gradient Text */
-.text-gradient {
-  background: linear-gradient(90deg, #0d6efd, #6610f2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.skill-card:hover {
+  transform: translateY(-8px);
+  background: rgba(43, 99, 196, 0.5);
 }
 
-/* Hero Image Wrapper */
-.hero-img-wrapper {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
-  padding: 6px;
-}
-
-.hero-img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* About Image Card */
-.about-img-card img {
-  transition: transform 0.4s ease;
-}
-
-.about-img-card img:hover {
-  transform: scale(1.05);
-}
-
-
-/*Typing effect*/
-/* Typing Text */
-.typing-text {
-  display: inline-block;
+.typing {
+  color: #0d6efd; /* Bootstrap primary */
+  border-right: 3px solid #0d6efd;
+  padding-right: 5px;
   white-space: nowrap;
-  overflow: hidden;
-  animation: typing 3s steps(12) infinite alternate;
+  animation: blink 0.7s infinite;
 }
 
-/* Cursor */
-.cursor {
-  display: inline-block;
-  margin-left: 4px;
-  animation: blink 1s infinite;
-  font-weight: 300;
-}
-
-/* Typing Effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 10.5ch; /* characters in "Shankar Das" */
-  }
-}
-
-/* Cursor Blink */
 @keyframes blink {
-  0%, 50%, 100% { opacity: 1; }
-  25%, 75% { opacity: 0; }
+  50% {
+    border-color: transparent;
+  }
 }
